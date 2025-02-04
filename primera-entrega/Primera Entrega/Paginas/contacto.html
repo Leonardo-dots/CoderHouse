@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="Info.html">Informacion</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="log-in.html">Log-in</a>
+        </nav>
+    </header>
+    <!-- Formulario de contacto -->
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <Label>Nombre: 
+                    <input type="text" placeholder="Diego">
+                </Label>
+                <label>Apellido: 
+                    <input type="text" placeholder="Igarzabal">
+                </label>
+                <label>DNI: 
+                    <input type="number">
+                </label>
+                <label>Sexo:
+                    <select>
+                        <option>Mucho</option>
+                        <option>Poco</option>
+                        <option>Deficiente</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option selected >Otro</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de contacto</legend>
+                <label>Numero Telefonico: 
+                    <input type="number">
+                </label>
+                <label>Direccion: 
+                    <input type="text">
+                </label>
+                <label>Email: 
+                    <input type="email">
+                </label>
+            </fieldset>
+            <div class="boton"> <!-- El div para poder centrar el boton en Css -->
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <p>Todos los derechos reservados</p>
+        <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+    </footer>
+</body>
+</html>
