@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Preguntas frecuentes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar-collapse"><span class="material-symbols-outlined">menu</span><input class="navbar-button" type="checkbox">
+              <a href="../index.html"><img src="../imagenes/logo/logo.png" alt="Logo mujer cocinera"></a>
+              <ul>
+                <li><a href="tips.html">Nuestros tips</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main class="container_main">
+        <h1>Preguntas frecuentes</h1>
+        <p>Sabemos que, al elegir una nueva opción de comida casera, pueden surgir algunas dudas. En esta sección, hemos reunido las preguntas más comunes que recibimos de nuestros clientes para ofrecerte toda la información que necesitas de manera rápida y clara. Si no encuentras la respuesta a lo que buscas, no dudes en contactarnos; estaremos encantados de ayudarte a resolver cualquier inquietud. ¡Queremos que tu experiencia con nuestra cocina sea lo más fácil y placentera posible!</p>
+        <!-- Bootstrap Accordion -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      ¿Cuanto tarda en llegar mi pedido?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Sabemos que la espera puede ser difícil cuando se trata de comida deliciosa, así que nos aseguramos de que tu pedido llegue lo más rápido posible. El tiempo de entrega varía según tu ubicación, pero en promedio, tus platos estarán en tu puerta en un plazo de 30 a 45 minutos. Si el tiempo de entrega se extiende, te notificaremos para que no tengas sorpresas.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      ¿Que dias hay Delivery?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">"Ofrecemos servicio de delivery de lunes a sábado, para que disfrutes de nuestras deliciosas comidas caseras en cualquier día de la semana. Los domingos nos tomamos un pequeño descanso para recargar energías y seguir preparando los mejores platillos para ti. ¡Pero no te preocupes! Los lunes estaremos nuevamente listos para llevarte lo mejor de nuestra cocina directamente a tu puerta."</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      ¿Hay descuentos por pagar en efectivo?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">¡Sí! Si eliges pagar en efectivo, te ofrecemos un pequeño descuento del 5% sobre el total de tu pedido como agradecimiento por tu preferencia. Es nuestra manera de agradecerte por elegirnos y confiar en nuestra cocina. Recuerda que el descuento solo aplica para pagos en efectivo, y no es acumulable con otras promociones.</div>
+                    </div>
+                </div>
+            </div>
+              <!--Fin Bootstrap Acordion -->
+              <!-- Form Bootstrap -->
+            <div class="mb-3 form-preguntas">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Hacenos tu pregunta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        <!-- Fin Form Bootstrap -->
+    </main>
+    <footer>
+        <span>Todos los derechos reservados</span>
+    </footer>
+</body>
+</html>

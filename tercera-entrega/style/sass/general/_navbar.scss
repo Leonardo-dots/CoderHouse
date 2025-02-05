@@ -1,0 +1,64 @@
+@use "../utilidades/variables";
+
+/*Navbar*/
+
+nav{
+    width: 100%;
+    padding: 5px 0 8px 10px;
+    font-size: 20px;
+    background-image:linear-gradient(variables.$color-principal2, variables.$color-principal);
+    border-radius: 0 0 4px 4px;
+    color: variables.$font-navbar;
+    img{
+        width: 64px;
+        margin: 4px 0;
+    }
+    img:hover{
+        filter: drop-shadow(0 0 5px variables.$color-principal);
+    }
+    ul{
+        display: none;
+        li{
+            width: 240px;
+            height: 30px; /* El width y height que tengan un espacio fijo y no se rompa al aplicarse el hover*/
+            margin: 2px;
+            text-align: center;
+            a{
+                color: inherit;
+                letter-spacing: 2px;
+                transition: font-size 500ms, text-shadow 500ms;
+            }
+            a:hover{
+                font-size: 21px;
+                text-shadow: 0 0 8px #fff;
+            }
+        }
+    }
+
+    /*Menu desplegable para Mobile*/
+
+    .material-symbols-outlined{
+        position: absolute;
+        font-size: 28px;
+        right: 10px;
+        top: 28px;
+        height: 20px;
+        width: 35px;
+    }
+    .navbar-button{
+        @extend .material-symbols-outlined;
+        opacity: 0;
+    }
+    .navbar-button:checked ~ ul{
+        display: flex;
+        width: 100dvw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar-button:checked ~ a img{
+        display: none;
+    }
+}

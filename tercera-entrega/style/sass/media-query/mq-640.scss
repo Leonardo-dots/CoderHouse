@@ -1,0 +1,32 @@
+@use "../utilidades/mixins";
+
+@media (min-width: 640px){
+    .navbar-collapse{
+        display: flex;
+        .navbar-button, .material-symbols-outlined{
+            display: none;
+        }
+        ul{
+            margin: 5px 0 0 10px;
+            flex-grow: 1;
+            @include mixins.grid(start, center, repeat(2, 1fr));
+        }
+    }
+    /* En caso de que se expanda la pantalla con checkbox checked se adapta automaticamente cerrandose el menu desplegable. */
+    /*NO FUNCIONA ¿POR QUE?*/
+    .navbar-button:checked ~ a img{
+        display: block;
+        padding: 3px;
+    }
+    .navbar-button:checked ~ ul{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    /* Main de Sobre nosotros */
+    .container_cards{
+        margin: 20px;
+    }
+}

@@ -1,0 +1,70 @@
+@use "../utilidades/mixins";
+@use "../utilidades/variables";
+
+
+@media (min-width: 1080px){
+    .navbar-collapse{
+        @include mixins.flex(start, center);
+        ul{
+            @include mixins.flex (space-around, start);
+            flex-grow: 1;
+            margin: auto;
+        }
+    }
+    /* Se acomoda el deplegable a la resolucion 1080px si se mantiene checkbox checked */
+    /*TAMPOCO FUNCIONA REVISION*/
+    .navbar-button:checked ~ ul{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-around;
+        margin: auto;
+    }
+    /*Main general*/
+    body{
+        background-image: url(../imagenes/ilustrativo/Fondo.jpeg);
+        background-size: cover;
+    }
+
+    /*Main Index*/
+    .container_menu{
+        width: clamp(920px, 80vw, 1600px);
+        margin: auto;
+        margin-top: 50px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: variables.$color-main;
+    }
+    .carousel-item {
+        max-height: 800px;
+      }
+
+    /* Main de Sobre nosotros */
+    .card{
+        align-self: self-start;
+    }
+    .card-2{
+        align-self:self-end;
+    }
+    /*Main Preguntas Frecuentes*/
+    .container_main{
+        background-color: variables.$color-main;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    /*Main tips*/
+    section{
+        width: clamp(900px, 70vw, 1600px);
+        article{
+            flex-direction: row;
+
+            .article{
+                flex-grow: 1;
+            }
+        }
+    } 
+}
+

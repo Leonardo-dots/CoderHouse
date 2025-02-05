@@ -11,7 +11,7 @@ body{
 /*Estilos Barra de navegacion*/
 nav{
     width: 100%;
-    padding:  5px 0 8px 10px;
+    padding: 5px 0 8px 10px;
     font-size: 20px;
     background-image:linear-gradient(#9d2316, chocolate);
     border-radius: 0 0 4px 4px;
