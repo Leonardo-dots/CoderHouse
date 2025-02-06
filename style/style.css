@@ -109,8 +109,7 @@ main p {
 
 /*Main Tips*/
 section {
-  background-color: #f0f0f0;
-  padding: 40px;
+  padding: 15px;
   margin: 50px auto;
   border-radius: 20px;
 }
@@ -146,9 +145,16 @@ section article .img-tip {
 }
 
 /*Main Preguntas Frecuentes*/
+.fondo {
+  background-image: url(../imagenes/ilustrativo/Fondo.jpeg);
+  background-size: cover;
+}
+
 .container_main {
   margin: 20px 8px;
-  padding: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
 }
 .container_main .accordion .accordion-item {
   margin: 10px;
@@ -218,6 +224,21 @@ footer {
   .container_cards {
     margin: 20px;
   }
+  /*Main tips*/
+  section {
+    width: clamp(500px, 95vw, 900px);
+    background-color: #f0f0f0;
+  }
+  section article {
+    flex-direction: row;
+  }
+  section article .article {
+    flex-grow: 2;
+  }
+  section article .img-tip {
+    flex-grow: 1;
+    width: clamp(240px, 50vw, 400px);
+  }
 }
 @media (min-width: 1080px) {
   .navbar-collapse {
@@ -275,13 +296,7 @@ footer {
   }
   /*Main tips*/
   section {
-    width: clamp(900px, 70vw, 1600px);
-  }
-  section article {
-    flex-direction: row;
-  }
-  section article .article {
-    flex-grow: 1;
+    width: clamp(500px, 80vw, 1100px);
   }
 }
 

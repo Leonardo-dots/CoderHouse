@@ -54,17 +54,8 @@
         padding: 15px;
         border-radius: 15px;
     }
-
     /*Main tips*/
     section{
-        width: clamp(900px, 70vw, 1600px);
-        article{
-            flex-direction: row;
-
-            .article{
-                flex-grow: 1;
-            }
-        }
+        width: clamp(500px, 80vw, 1100px);
     } 
 }
-

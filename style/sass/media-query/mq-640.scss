@@ -1,4 +1,5 @@
 @use "../utilidades/mixins";
+@use "../utilidades/variables";
 
 @media (min-width: 640px){
     .navbar-collapse{
@@ -28,5 +29,21 @@
     /* Main de Sobre nosotros */
     .container_cards{
         margin: 20px;
+    }
+
+    /*Main tips*/
+    section{
+        width: clamp(500px, 95vw, 900px);
+        background-color: variables.$color-main;
+        article{
+            flex-direction: row;
+            .article{
+                flex-grow: 2;
+            }
+            .img-tip{
+                flex-grow: 1;
+                width: clamp(240px, 50vw, 400px);
+            }
+        }
     }
 }
