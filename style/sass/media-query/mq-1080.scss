@@ -12,7 +12,7 @@
         }
     }
     /* Se acomoda el deplegable a la resolucion 1080px si se mantiene checkbox checked */
-    /*TAMPOCO FUNCIONA REVISION*/
+    /*Lo mismo que en MQ de 640px*/
     .navbar-button:checked ~ ul{
         display: flex;
         flex-direction: row;

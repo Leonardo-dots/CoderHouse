@@ -28,6 +28,9 @@ main{
     @include mixins.grid(center, center, repeat(auto-fit, 300px));
     gap: 20px;
     .card{
+        animation: opacidad both alternate;
+        animation-timeline: view();
+        animation-range-end: 30%;
         img{
             height: 400px;
             object-fit: cover;
@@ -105,5 +108,14 @@ section{
     margin-top: 90px;
     border-radius: 18px;
     background-color: #f0f0f0;
+    }
+}
+
+@keyframes opacidad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }

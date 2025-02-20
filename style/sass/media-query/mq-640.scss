@@ -14,7 +14,7 @@
         }
     }
     /* En caso de que se expanda la pantalla con checkbox checked se adapta automaticamente cerrandose el menu desplegable. */
-    /*NO FUNCIONA ¿POR QUE?*/
+    /*No se por que esto no funciona. Si saben que es lo que no funciona, agredezco una correcion y explicacion gracias*/
     .navbar-button:checked ~ a img{
         display: block;
         padding: 3px;

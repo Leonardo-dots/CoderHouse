@@ -105,6 +105,9 @@ main p {
 .container_menu .menu .card img {
   height: 400px;
   object-fit: cover;
+  animation: opacidad both alternate;
+  animation-timeline: view();
+  animation-range-end: 30%;
 }
 
 /*Main Tips*/
@@ -180,6 +183,14 @@ section article .img-tip {
   background-color: #f0f0f0;
 }
 
+@keyframes opacidad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 footer {
   font-size: 14px;
   text-align: center;
@@ -208,7 +219,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   /* En caso de que se expanda la pantalla con checkbox checked se adapta automaticamente cerrandose el menu desplegable. */
-  /*NO FUNCIONA ¿POR QUE?*/
+  /*No se por que esto no funciona. Si saben que es lo que no funciona, agredezco una correcion y explicacion gracias*/
   .navbar-button:checked ~ a img {
     display: block;
     padding: 3px;
